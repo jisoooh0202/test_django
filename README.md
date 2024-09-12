@@ -33,7 +33,7 @@ source venv/bin/activate ## Linux
 venv\Scripts\activate ## Windows
 ```
 
-Install the packages
+Install the packages in requirements.txt file.
 ```shell
 python -m pip install -r requirements.txt
 ```
@@ -51,6 +51,11 @@ python manage.py createsuperuser
 Run server
 ```shell
 python manage.py runserver
+```
+
+To pin all the dependencies in your venv after adding more packages.
+```shell
+python -m pip freeze > requirements.txt
 ```
 
 Open up your browser and go to `localhost:8000` you will see the homepage. To go to django admin page, go to `localhost:8000/admin`.
