@@ -38,7 +38,19 @@ Install the packages
 python -m pip install -r requirements.txt
 ```
 
+Migrate
+```shell
+python manage.py migrate
+```
+
+Create Superuser
+```shell
+python manage.py createsuperuser
+```
+
 Run server
 ```shell
 python manage.py runserver
 ```
+
+Open up your browser and go to `localhost:8000` you will see the homepage. To go to django admin page, go to `localhost:8000/admin`.
